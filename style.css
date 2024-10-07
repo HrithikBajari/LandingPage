@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(237, 237, 237);
+  }
+  
+  
+  .navbar {
+    background-color: rgb(136, 136, 254);
+    padding: 1rem;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .navbar-menu li {
+    margin-left: 1.5rem;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .navbar-menu a:hover {
+    color: #007bff;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0.5rem;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .dropdown-menu a {
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #007bff;
+  }
+  
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-search {
+    display: flex;
+  }
+  
+  .navbar-search input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+  }
+  
+  
+  
+  .burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .content{
+    margin: 40px;
+  }
+
+  .content-part{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .content-part img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  #text-part{
+    background-color: rgb(240, 211, 240);
+  }
+
+  .information{
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .flex{
+    height: 40px;
+    width: 100px;
+    border-radius: 2px;
+    color: white;
+    padding: 10px;
+    font-size: 8px;
+
+  }
+  .flex-item1{
+    background-color: rgb(169, 169, 255);
+  }
+
+  .flex-item2{
+    background-color: rgb(165, 52, 231);
+  }
+
+  .flex-item3{
+    background-color: rgb(232, 130, 235);
+  }
+
+  .flex-item4{
+    background-color: rgb(0, 0, 0);
+  }
+
+  .bottom-section{
+    margin: 30px;
+    width: 650px;
+    height: 250px;
+    background-color: rgb(60, 60, 236);
+    position: static;
+    display: flex;
+    /* flex-direction: row; */
+  }
+
+  .bottom-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    gap: 45px;
+    color: white;
+  }
+
+  .bottom{
+    width: 100px;
+    height: 40px;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  
+
+  .myInformation{
+    position: absolute;
+    background-color: white;
+    width: 480px;
+    height:210px ;
+    margin-top: 20px;
+    margin-left: 150px;
+    text-align:left;
+
+  }
+  .myInformation h4{
+    margin: 10px;
+  }
+  .list{
+    list-style: none;
+    text-align: left;
+    font-size: 12px;
+    line-height: 3;
+    margin-left: 20px;
+  }
+
+  .btn{
+    margin-left: 410px;
+    width: 60px;
+    background-color: black;
+    border-radius: 2px;
+    color: white;
+    /* padding: 10px; */
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+
+.social-media {
+  position: fixed;
+  right: 20px;
+  top: 50%; 
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+
+.social-icon img {
+  width: 30px; 
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
